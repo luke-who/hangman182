@@ -4,6 +4,9 @@
 ## Table of Contents
 - [Description](#description)
 - [Installation Instructions](#installation-instructions)
+- [Usage Instructions](#usage-instructions)
+- [File Structure](#file-structure)
+- [License](#license)
 
 ## Description
 Hangman is a classic game in which a player thinks of a word and the other player tries to guess that word within a certain amount of attempts.
@@ -16,10 +19,15 @@ To run the Hangman game on your local machine, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/luke-who/hangman182.git
-2. Navigate to the project directory
+2. Navigate to the project directory and source code folder [hangman182/hangman](/hangman)
    ```bash
-   cd hangman182
+   cd hangman182/hangman
+   ```
 3. Ensure you have Python installed on your machine. Here I have used `Python 3.10.15`
+   ```bash
+   ❯ python --version
+   Python 3.10.15
+   ```
 
 ## Usage Instructions
 To start the Hangman game, run the following command in your terminal:
@@ -27,16 +35,22 @@ To start the Hangman game, run the following command in your terminal:
 python hangman.py
 ```
 Follow the on-screen instructions to guess the letters of the word. You will have a limited number of incorrect guesses before the game ends.
+The default value for the number of lives `num_lives` is 5.
 
 ## File Structure
 ```
 ❯ tree
-hangman182/
-├── LICENSE                     # License information
-├── README.md                   # Project documentation
-├── hangman                     
-│   └── hangman_Template.py     # Game template
-└── milestone_2.py              # Steps to build the game
+.
+├── LICENSE                        # License information
+├── README.md                      # Project documentation
+├── hangman                        # Source code folder
+│   ├── hangman.py                 # Main game
+│   └── hangman_Template.py        # Game template (for reference only)
+└── milestones                     # Steps to build the game
+    ├── milestone_2.py
+    ├── milestone_3.py
+    ├── milestone_4.py
+    └── milestone_5.py           
 ```
 
 ## License
