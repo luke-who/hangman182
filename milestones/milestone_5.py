@@ -2,6 +2,18 @@ import random
 
 
 class Hangman:
+    """
+    A class to represent the Hangman game.
+
+    Attributes:
+    word (str): The word to be guessed in the game.
+    word_guessed (list): A list representing the current state of guessed letters in the word.
+    num_letters (int): The number of unique letters in the word that need to be guessed.
+    num_lives (int): The number of incorrect guesses allowed before the game is over.
+    word_list (list): A list of possible words to choose from for the game.
+    list_of_guesses (list): A list of letters that have already been guessed by the player.
+    """
+
     def __init__(self, word_list, num_lives=5):
         """
         Initializes a new instance of the Hangman game.
@@ -63,8 +75,13 @@ def play_game(word_list):
     """
     Plays the Hangman game.
 
+    This function initializes a Hangman game instance and manages the game loop, checking for win/loss conditions.
+
+    Parameters:
+    word_list (list): A list of words from which the game will randomly select one.
+
     Returns:
-    None: This method does not return a value but contains the logic to play the game.
+    None: This function does not return a value but contains the logic to play the game.
     """
     num_lives = 5
     game = Hangman(word_list, num_lives)
@@ -79,7 +96,7 @@ def play_game(word_list):
             print("Congratulations. You won the game!")
             break
 
-# Example usage
-word_list = ["apple", "jackfruit", "blueberry", "pomegranate", "watermelon"]
 
-play_game(word_list)
+if __name__ == "__main__":
+    word_list = ["apple", "jackfruit", "blueberry", "pomegranate", "watermelon"]
+    play_game(word_list)
