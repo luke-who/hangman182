@@ -21,7 +21,7 @@ To run the Hangman game on your local machine, follow these steps:
    git clone https://github.com/luke-who/hangman182.git
 2. Navigate to the project directory and source code folder [hangman182/hangman](/hangman)
    ```bash
-   cd hangman182/hangman
+   cd hangman
    ```
 3. Ensure you have Python installed on your machine. Here I have used `Python 3.10.15`
    ```bash
